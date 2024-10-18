@@ -1,0 +1,113 @@
+body {
+    background-color: rgb(252, 250, 250) !important;
+    color: #333;
+}
+.english{
+    
+    text-align: justify;
+    font-family: "Tinos", serif;
+    font-size: 20px;
+  }
+header {
+    text-align: center;
+    background: linear-gradient(90deg, rgba(173, 216, 230, 1) 0%, rgba(255, 182, 193, 1) 100%);
+    border-bottom: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.links {
+    display: inline;
+    font-size: 18px;
+    color: #fff;
+    background: none;
+    text-decoration: none !important;
+    padding: 0;
+    border: none;
+}
+a:hover {
+    color: #e0e0e0;
+}
+
+ol {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    margin-right: 50px;
+}
+ol li {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+p{
+    margin-top: 40pxpx;
+    line-height: 37px;
+}
+.content-container {
+    display: flex; 
+    margin-top: 40px; 
+}
+.about-img {
+    width: 350px;
+    height: auto;
+    border-radius: 8px; 
+    box-shadow: 0 4px 12px rgba(164, 34, 34, 0.2); 
+    margin-left: 170px; 
+    position: relative; 
+    left: -200px; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+.about-img:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
+}
+.about-text {
+    flex: 1; 
+    font-family: 'Work Sans', sans-serif; 
+    margin: 0; 
+    padding-left: 20px; 
+    position: relative;
+}
+
+h2 {
+    font-size: 2.5rem; 
+    margin-bottom: 20px; 
+    color: #333; 
+}
+html, body {
+    height: 100%; 
+    margin: 0; 
+    display: flex; 
+    flex-direction: column;
+}
+
+.container {
+    flex: 1; 
+}
+footer {
+    background-color: #000; 
+    color: #fff; 
+    padding: 20px 0;
+    text-align: center;
+    border-top: 1px solid #eaeaea;
+}
+
+footer .footer-links a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #fff; 
+}
+
+footer .footer-links a:hover {
+    text-decoration: underline;
+}
+
+footer .footer-info {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #fff; 
+}
+* {
+    box-sizing: border-box;
+}
