@@ -28,25 +28,87 @@
             </nav>
         </div>
     </header>
-    <div class="container d-flex align-items-center mt-4 content-container">
-        <img src="/PHOTOS/LOGO1.jpg" alt="Easy Ride Logo" class="about-img me-4">
-        <div class="about-text position-relative">
-            <h2>Welcome to Easy Ride</h2>
-            <p class="english">
-                Welcome to Easy Ride, your go-to solution for effortless travel planning! We understand how challenging it can be to navigate public transportation, especially in unfamiliar areas. That's why we've created an intuitive platform that makes finding your way easier than ever. With Easy Ride, you get straightforward, user-friendly access to bus numbers and essential transit information, so you can focus on enjoying your journey. Whether you're a daily commuter or exploring a new city, we are here to simplify your ride.
-            </p>
-        </div>
-    </div>
-    <footer>
-        <div class="footer-links">
-            <a href="index.html">Home</a>
-            <a href="aboutus.html">About Us</a>
-            <a href="search.html">Search</a>
-            <a href="form.html">Photos</a>
-        </div>
-        <div class="footer-info">
-            <p>Designed by Yaswanth | Email: <a href="mailto:22501a05f8@pvpsit.ac.in" style="color: #fff;">22501a05f8@pvpsit.ac.in</a></p>
-        </div>
-    </footer>
-</body>
-</html>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>User Information Form</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 20px;
+            }
+            form {
+                max-width: 400px;
+                margin: auto;
+                padding: 20px;
+                border: 1px solid #ccc;
+                border-radius: 10px;
+                background-color: #f9f9f9;
+            }
+            label {
+                display: block;
+                margin-bottom: 10px;
+            }
+            input[type="text"],
+            input[type="date"],
+            input[type="tel"],
+            input[type="email"],
+            select {
+                width: 100%;
+                padding: 8px;
+                margin-bottom: 10px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+            }
+            input[type="submit"] {
+                background-color: #4CAF50;
+                color: white;
+                border: none;
+                border-radius: 4px;
+                padding: 10px;
+                cursor: pointer;
+            }
+            input[type="submit"]:hover {
+                background-color: #45a049;
+            }
+        </style>
+    </head>
+    <body>
+    
+    <h2>Application Form</h2>
+    
+    <form action="submit_form.php" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+    
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+    
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+    
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address" required>
+    
+        <label for="college">College Name:</label>
+        <input type="text" id="college" name="college" required>
+    
+        <label for="passType">Type of Pass:</label>
+        <select id="passType" name="passType" required>
+            <option value="" disabled selected>Select Pass Type</option>
+            <option value="student">Student Pass</option>
+            <option value="adult">Adult Pass</option>
+            <option value="senior">Senior Pass</option>
+        </select>
+    
+        <label for="routes">Preferred Routes:</label>
+        <input type="text" id="routes" name="routes" required>
+    
+        <input type="submit" value="Submit">
+    </form>
+    
+    </body>
+    </html>
+    
